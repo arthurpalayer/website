@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newuser</title>
+</head>
+<body>
+    {% block content %}
+    <h1>SIGNUP</h1>
+    <form method="post" action="/">
+        <label for="username">enter username:</label>
+        <input type="text" id="username" name="username">
+        
+        <button type="submit">Submit</button>
+    </form>
+    {% endblock %}
+</body>
+</html>
